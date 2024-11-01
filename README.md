@@ -32,7 +32,7 @@ and the person we are looking for are calculated as the norm of the difference o
 The returned bounding box is the one corresponding to the shortest distance to the person we are looking for while
 achieving a minimum threshold. This process is described in Figure 2.
 
-![Architecture](https://github.com/user-attachments/assets/332ab6ea-17db-4560-a36e-942219943620)
+![Project Overview](https://github.com/user-attachments/assets/ce62e5cd-0e1f-4e7c-bb2a-56b24a88690c)
 
 Figure 1. Architecture of Person Finder.
 

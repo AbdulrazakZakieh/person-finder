@@ -1,0 +1,5 @@
+facenet-pytorch
+Flask
+torch
+torchvision
+ultralytics

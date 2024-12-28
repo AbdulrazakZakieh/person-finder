@@ -86,6 +86,19 @@ def search():
         y2 = x
         return make_response(jsonify({'success': True,  'x': x, 'y': y, 'x2': x2, 'y2': y2,'message': "Person not found"}), 400)
 
+
+@app.route('/count', methods=['POST'])
+def search():
+    image = request.files['image']
+    image_path = "temp_image.jpg"
+    image.save(image_path)
+    print('Detecting faces')
+    result = yoloModel(image_path)   
+    print("Faces detected")
+    print(len(result))
+    return make_response(jsonify({'success': True,  'count': len(result)}), 400)
+
+
 if __name__ == '__main__':
     app.run(debug=True, port = 9001)
 
